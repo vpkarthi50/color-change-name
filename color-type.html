@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<body>
+	<div class="bod">
+	<input type="text"  id="dis" placeholder="Enter a color">
+	
+	<button type="button" id="btn">Click me</button>
+	
+	</div>
+	<script>
+		let but=document.getElementById("btn")
+		
+			but.addEventListener("click",random);
+		
+		function random(){
+			let col=document.getElementById("dis").value;
+			document.body.style.backgroundColor = col;
+			
+		}
+	</script>
+	</body>
+</html>
